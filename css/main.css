@@ -3,10 +3,13 @@
   color: #fff; }
 
 .pic-crop {
-  display: inline-block;
+  background-color: #111;
+  display: block;
   overflow: hidden;
   height: 200px;
   width: auto; }
+  .pic-crop img {
+    width: 100%; }
 
 @media only screen and (min-width: 40em) and (max-width: 52em) {
   #images .sm-col:nth-child(2n+1) {
