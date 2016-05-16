@@ -1,15 +1,24 @@
-.pic-card
-  background-color: $light-gray
-  color: $hot-pink
 
+.pic-card
+  background-color: $hot-pink
+  color: #fff
+
+// This is to help the images have a grid appearance.
+.pic-crop
+  display: inline-block
+  overflow: hidden
+  height: 200px
+  width: auto
 
 #images
-  @media (min-width:40em)
-    .sm-col:nth-child(n+2)
-      clear: both
-  @media (min-width:52em)
-    .sm-col:nth-child(n+3)
-      clear: both
-  @media (min-width:64em)
-    .sm-col:nth-child(n+4)
-      clear: both
+  @media only screen and (min-width: 40em) and (max-width:52em)
+    .sm-col:nth-child(2n+1)
+      clear: left
+
+  @media only screen and (min-width:52em) and (max-width:64em)
+    .sm-col:nth-child(3n+1)
+      clear: left
+
+  @media only screen and (min-width:64em)
+    .sm-col:nth-child(4n+1)
+      clear: left

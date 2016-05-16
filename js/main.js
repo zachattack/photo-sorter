@@ -39,9 +39,9 @@
 					});
 
 				returnHTML = "<div class='sm-col sm-col-6 md-col-4 lg-col-3'>";
-				returnHTML += "<div class='pic-card p2 mx2'>"
-				returnHTML += "<img class='fit' src='" + mediumImage + "' alt='" + item.title + "' />";
-				returnHTML += "<p class='p1'>" + item.title + "</p>";
+				returnHTML += "<div class='pic-card mx2 mb3'><div class='pic-crop'>"
+				returnHTML += "<img class='fit' src='" + mediumImage + "' alt='" + item.title + "' /></div>";
+				returnHTML += "<p class='pb2 px2 m0'>" + item.title + "</p>";
 				returnHTML += "</div></div>";
 
 				$("#images").append(returnHTML);

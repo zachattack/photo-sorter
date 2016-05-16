@@ -1,16 +1,22 @@
 .pic-card {
-  background-color: #DAEDE2;
-  color: #EA2E49; }
+  background-color: #EA2E49;
+  color: #fff; }
 
-@media (min-width: 40em) {
-  #images .sm-col:nth-child(n+2) {
-    clear: both; } }
-@media (min-width: 52em) {
-  #images .sm-col:nth-child(n+3) {
-    clear: both; } }
-@media (min-width: 64em) {
-  #images .sm-col:nth-child(n+4) {
-    clear: both; } }
+.pic-crop {
+  display: inline-block;
+  overflow: hidden;
+  height: 200px;
+  width: auto; }
+
+@media only screen and (min-width: 40em) and (max-width: 52em) {
+  #images .sm-col:nth-child(2n+1) {
+    clear: left; } }
+@media only screen and (min-width: 52em) and (max-width: 64em) {
+  #images .sm-col:nth-child(3n+1) {
+    clear: left; } }
+@media only screen and (min-width: 64em) {
+  #images .sm-col:nth-child(4n+1) {
+    clear: left; } }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, sans-serif;
